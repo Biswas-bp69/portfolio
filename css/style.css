@@ -1,0 +1,15 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* content header मुनि देखाउन */
+.main-content {
+  margin-top: 80px;
+  flex: 1;
+  padding: 20px;
+  border: 2px solid navy;
+}
