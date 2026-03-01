@@ -105,7 +105,7 @@ ul li {
 .dropdown.show {
   background: #a5ffa5;
   display: block;
-  margin-left: -1.5rem;
+  margin-left: -0.5rem;
 
 }
 
