@@ -1,0 +1,51 @@
+.contactHeader {
+  padding-bottom: 60px;
+}
+
+.contactHeader h2 {
+  font-weight: 650;
+  margin-bottom: 1.5rem;
+}
+
+.contacRight,
+.contacLeft {
+  padding: 30px;
+}
+
+.contacRight i {
+  font-size: 1.5rem;
+  color: #34b7a7;
+  background:
+    color-mix(in srgb, #34b7a7, transparent 92%);
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+  margin-right: 15px;
+}
+
+h5 {
+  margin: 0.4px;
+}
+
+
+/* side left form  */
+.contacLeft input {
+  margin-top: 0.6rem;
+  width: 100%;
+  padding: 8px;
+
+}
+
+.contacLeft button {
+  color: white;
+  background: #34b7a7;
+  border: 0;
+  padding: 10px 30px;
+  transition: 0.4s;
+  border-radius: 50px;
+  margin-top: 1rem;
+}

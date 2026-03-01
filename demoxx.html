@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Smooth Typing with HTML</title>
+
+  <style>
+    body {
+      font-family: monospace;
+      font-size: 28px;
+      padding: 50px;
+      background: #f4f4f4;
+    }
+
+    /* Cursor style */
+    #cursor {
+      display: inline-block;
+      width: 10px;
+      animation: blink 0.7s infinite;
+    }
+
+    @keyframes blink {
+
+      0%,
+      50%,
+      100% {
+        opacity: 1;
+      }
+
+      25%,
+      75% {
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <p id="message">
+    <!-- यो span भित्र HTML content राखिने छ -->
+    <span id="text">
+      Welcome to <strong>My Website</strong>! Here you can find <em>awesome content</em>.
+    </span>
+    <span id="cursor">|</span>
+  </p>
+
+  <script>
+    const textElement = document.getElementById("text");
+    const cursor = document.getElementById("cursor");
+
+    // HTML content store गरेर clear गर्नु
+    const fullHTML = textElement.innerHTML;
+    textElement.innerHTML = "";
+
+    let i = 0;
+
+    // Smooth typing function for HTML content
+    function typeHTML() {
+      if (i < fullHTML.length) {
+        // Add one character at a time
+        textElement.innerHTML += fullHTML.charAt(i);
+        i++;
+        setTimeout(typeHTML, 40); // speed control
+      } else {
+        // Typing finished, hide cursor
+        cursor.style.display = "none";
+      }
+    }
+
+    typeHTML();
+  </script>
+
+</body>
+
+</html>

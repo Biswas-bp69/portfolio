@@ -4,12 +4,78 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  background: #f8f9ff !important;
+
 }
 
-/* content header मुनि देखाउन */
+/*====================>>>    home page start    <<<======================= */
+
 .main-content {
-  margin-top: 80px;
+  margin-top: 60px;
   flex: 1;
-  padding: 20px;
-  border: 2px solid navy;
+
 }
+
+.myShadow {
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.10) !important;
+}
+
+.heroSection {
+  height: 100vh;
+  background-image: url("../img/hero-bg.jpg");
+  background-size: cover;
+  padding: 0px;
+}
+
+.heroSection a {
+  color: white;
+  background: #34b7a7;
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 40px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin-top: 30px;
+  text-decoration: none;
+}
+
+.heroSection a:hover {
+  color: white;
+  background: #27897e;
+}
+
+.heroSection h2 {
+  margin: 0;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.heroSection p {
+  margin: 10px 0 0 0;
+  font-size: 24px;
+  color: var(--heading-color);
+}
+
+.zoomSlide {
+  animation: zoomSlide 1.5s ease forwards;
+}
+
+@keyframes zoomSlide {
+  0% {
+    transform: translateY(100px) scale(2);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+}
+
+
+
+/*====================>>>    home page end    <<<======================= */

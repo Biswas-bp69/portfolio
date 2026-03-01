@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About JavaScript</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  <link rel="stylesheet" href="blogs.css">
+
+</head>
+
+<body>
+  <div id="header"></div>
+
+
+  <main>
+    <div class="container">
+      <h1 class="text-center topicAnimated">JavaScript</h1>
+      <div class="row mt-5 animated">
+        <div class="col-lg-6 p-4">
+          <div class="shadow p-4">
+            <p id="message">
+              <!-- यो span भित्र HTML content राखिने छ -->
+              <strong> <span id="text" class="text-success">About JavaScript :</span> </strong>
+              <span id="cursor">|</span>
+            </p>
+            <p>
+              JS (javaScript) is a programming language that makes websites lively, interactive, and dynamic.
+              Html creates the structure of the website. Css designs it, while JS writes the logic.
+              For example, there is a simple lamp. It is made from html. Now that lamp is designed and made beautiful
+              with css. Now the logic of turning on the lamp when the beautiful lamp is switched on is written in js.
+              Example:
+            </p>
+            <div class="col-12 text-center">
+              <img src="../img/blogsImg/lamp.jpg" alt="" width="290px" height="300px">
+
+            </div>
+
+          </div>
+        </div>
+        <div class="col-lg-6 p-4">
+          <div class="shadow p-4">
+            <p>
+              <strong>Why is Js need?</strong><br>
+              Only HTML and CSS make a website static, but with the help of JS,
+              a website becomes dynamic. For example: a menu opens when clicked,
+              a button changes color when pressed, a popup opens, etc. <br>
+              For example: a menu opens when clicked, a button changes color when pressed, a popup opens etc.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+
+
+
+
+
+
+
+
+
+
+  <div id="footer"></div>
+  <script>
+    fetch('../header.html')
+      .then(Response => Response.text())
+      .then(data => document.getElementById('header').innerHTML = data);
+    fetch('../footer.html')
+      .then(Response => Response.text())
+      .then(data => document.getElementById('footer').innerHTML = data);
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+  <script src="../js/typing.js"></script>
+
+
+
+
+
+
+</body>
+
+</html>

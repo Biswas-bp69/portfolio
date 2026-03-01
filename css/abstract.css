@@ -1,0 +1,17 @@
+:root {
+  --primaryColor: rgb(0 95 189);
+  --activeColor: #4255fff5;
+  --secondaryColor: #03014c;
+  --fontColor: #0c053c;
+  --backgroundColor: #f8f9ff !important;
+  --shadowColor: 0 2px 6px 0.5px rgb(97 2 255 / 10%);
+  --iconColor: #0015d587;
+  --largeIconBg: #d8ffed;
+  --ButtonBG: #0000ba;
+  --btnHover: #004991;
+}
+
+body {
+  font-family: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  ;
+}

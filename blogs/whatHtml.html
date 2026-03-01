@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About JavaScript</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  <link rel="stylesheet" href="blogs.css">
+
+</head>
+
+<body>
+  <div id="header"></div>
+
+
+  <main>
+    <div class="container">
+      <h1 class="text-center topicAnimated">HyperText Markup Language</h1>
+      <div class="row mt-5 animated">
+        <div class="col-lg-6 p-4">
+          <div class="shadow p-4">
+            <p>
+              The full form of Html is <strong>hypertext markup language.</strong> This is a language for creating
+              website templates.
+              You can use it to create the layout of a website. There are various types of sacrifices in this. Sacrifice
+              is a special character written inside <>.
+                Each tag has its own function and characteristics.
+                They tell the browser what to do and what the browser displays.
+            </p>
+            <div class="col-12 text-center">
+              <img src="../img/blogsImg/htmlpg.jpg" alt="" width="290px" height="auto" loading="lazy">
+
+            </div>
+
+          </div>
+        </div>
+        <div class="col-lg-6 p-4">
+          <div class="shadow p-4">
+            <p class="text-start">
+              There are mainly 2 types of tags :<br>
+              1. Paired tag This is both an opening and a closing.<br>
+              2. Self closing tag. <br><br>
+              We can read some of the main tags in categories like this.
+            </p>
+            <img src="../img/blogsImg/tags.jpg" alt="" width=" 370px" height="auto" loading="lazy">
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+
+
+
+
+
+
+
+
+
+
+  <div id="footer"></div>
+  <script>
+    fetch('../header.html')
+      .then(Response => Response.text())
+      .then(data => document.getElementById('header').innerHTML = data);
+    fetch('../footer.html')
+      .then(Response => Response.text())
+      .then(data => document.getElementById('footer').innerHTML = data);
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+
+
+
+
+
+
+</body>
+
+</html>

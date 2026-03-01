@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About JavaScript</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  <link rel="stylesheet" href="blogs.css">
+
+</head>
+
+<body>
+  <div id="header"></div>
+
+
+  <main>
+    <div class="container">
+      <h1 class="text-center topicAnimated">How to use GitHub</h1>
+      <div class="row mt-5 animated">
+        <div class="col-lg-6 p-4">
+          <div class="shadow p-4">
+            <h5> 1. Go to https://github.com and create an account.</h5>
+            <h5> 2.Download git from https://git-scm.com.</h5>
+            <h5> 3. Create a repository on Github</h5>
+            <ul>
+              <li> <i class="fa-solid fa-angle-right"></i> Open github </li>
+              <li> <i class="fa-solid fa-angle-right"></i> Click top right side "+" icons </li>
+              <li> <i class="fa-solid fa-angle-right"></i> Click new repository</li>
+              <li> <i class="fa-solid fa-angle-right"></i> Type repo name </li>
+              <li> <i class="fa-solid fa-angle-right"></i> Choose private or public </li>
+              <li> <i class="fa-solid fa-angle-right"></i> Click creat repo </li>
+            </ul>
+
+
+          </div>
+        </div>
+        <div class="col-lg-6 p-4">
+          <div class="shadow p-4">
+            <h5> 4. Two ways to upload a project</h5>
+            <h5>First method (easy way)</h5>
+            <ul>
+              <li><i class="fa-solid fa-angle-right"></i>  Open repo </li>
+              <li><i class="fa-solid fa-angle-right"></i>  Click on upload file</li>
+              <li><i class="fa-solid fa-angle-right"></i>  Choose your file </li>
+              <li><i class="fa-solid fa-angle-right"></i>  Click commit </li>
+            </ul>
+            <h5>Second methord (Professional way)</h5>
+            <ul>
+              <li><i class="fa-solid fa-angle-right"></i> Open vs code </li>
+              <li><i class="fa-solid fa-angle-right"></i> Open project </li>
+              <li><i class="fa-solid fa-angle-right"></i> Go to command prompt ( "ctrl" + "~")</li>
+              <li><i class="fa-solid fa-angle-right"></i> Command: git branch branch-name </li>
+              <li><i class="fa-solid fa-angle-right"></i> Command: git branch ( check all branch) </li>
+              <li><i class="fa-solid fa-angle-right"></i> Command: git checkout branch-name</li>
+              <li><i class="fa-solid fa-angle-right"></i> Command: git init </li>
+              <li><i class="fa-solid fa-angle-right"></i> Commmand: git add . </li>
+              <li><i class="fa-solid fa-angle-right"></i> Commmand: git commit -m "something"</li>
+              <li><i class="fa-solid fa-angle-right"></i> Commmand: git push -u origin branch-name</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+
+
+
+
+
+
+
+
+
+
+  <div id="footer"></div>
+  <script>
+    fetch('../header.html')
+      .then(Response => Response.text())
+      .then(data => document.getElementById('header').innerHTML = data);
+    fetch('../footer.html')
+      .then(Response => Response.text())
+      .then(data => document.getElementById('footer').innerHTML = data);
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+
+
+
+
+
+
+</body>
+
+</html>

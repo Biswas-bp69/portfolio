@@ -1,0 +1,52 @@
+body {
+  font-family: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto 
+ !important
+}
+
+main {
+  margin-top: 150px;
+  margin-bottom: 3rem;
+  flex: 1;
+}
+
+main h1 {
+  font-weight: 550;
+}
+
+
+.animated {
+  animation: animated 0.8s ease-out forwards;
+}
+
+@keyframes animated {
+  from {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+
+
+
+
+.topicAnimated {
+  animation: topicAnimated 1.5s ease forwards;
+}
+
+@keyframes topicAnimated {
+  0% {
+    transform: translateY(10px) scale(1.2);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+}
