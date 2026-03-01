@@ -28,11 +28,11 @@
             <span class="menu d-lg-none">
               <button class="menu-btn" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></button>
               <div class="dropdown" id="myDropdown">
-                <a href="../index.html">Home</a>
-                <a href="../about.html">About</a>
-                <a href="../project.html">Project</a>
-                <a href="../blog.html">Blogs</a>
-                <a href="../contact.html">Contact</a>
+                <a href="../index.html" id="myLink">Home</a>
+                <a href="../about.html" id="myLink">About</a>
+                <a href="../project.html" id="myLink">Project</a>
+                <a href="../blog.html" id="myLink">Blogs</a>
+                <a href="../contact.html" id="myLink">Contact</a>
               </div>
             </span>
             <div class="searchTop ">
@@ -48,11 +48,12 @@
         <div class="col-lg-5 d-flex align-items-center navArea">
           <nav class="d-none d-lg-block ">
             <ul class="d-flex gap-3 m-0 align-items-center p-0">
-              <li><a href="../index.html"><button class="navBtns">Home</button></a></li>
-              <li><a href="../about.html"><button class="navBtns">About</button></a></li>
-              <li><a href="../project.html"><button class="navBtns">Project</button></a></li>
-              <li><a href="../blog.html"><button class="navBtns">Blogs</button></a></li>
-              <li><a href="../contact.html"><button class="contact btnHover"><i class="fa-solid fa-phone"></i>
+              <li><a href="../index.html"><button class="navBtns" class="myLink">Home</button></a></li>
+              <li><a href="../about.html"><button class="navBtns" class="myLink">About</button></a></li>
+              <li><a href="../project.html"><button class="navBtns" class="myLink">Project</button></a></li>
+              <li><a href="../blog.html"><button class="navBtns" class="myLink">Blogs</button></a></li>
+              <li><a href="../contact.html"><button class="contact btnHover" class="myLink"><i
+                      class="fa-solid fa-phone"></i>
                     Contact</button></li>
             </ul>
           </nav>

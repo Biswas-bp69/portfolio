@@ -1,3 +1,41 @@
-.projectImg {
-  background-image: url("../../img/project/shiva.png");
+.box {
+  width: 100%;
+  height: 250px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* Image */
+.box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+/* Text Content */
+.content {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+/* Hover Effect */
+.box:hover img {
+  transform: scale(1.1);
+}
+
+.box:hover .content {
+  transform: translateY(100%);
+  opacity: 0;
+}
+
+h2 {
+  color: white;
 }

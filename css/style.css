@@ -1,28 +1,8 @@
-body {
-  margin: 0;
-  font-family: Arial;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  background: #f8f9ff !important;
-
-}
-
 /*====================>>>    home page start    <<<======================= */
-
-.main-content {
-  margin-top: 60px;
-  flex: 1;
-
-}
-
-.myShadow {
-  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.10) !important;
-}
 
 .heroSection {
   height: 100vh;
-  background-image: url("../img/hero-bg.jpg");
+  background-image: url("../img/hero-bg.jpg") ;
   background-size: cover;
   padding: 0px;
 }
@@ -59,23 +39,3 @@ body {
   font-size: 24px;
   color: var(--heading-color);
 }
-
-.zoomSlide {
-  animation: zoomSlide 1.5s ease forwards;
-}
-
-@keyframes zoomSlide {
-  0% {
-    transform: translateY(100px) scale(2);
-    opacity: 0;
-  }
-
-  100% {
-    transform: translateY(0) scale(1);
-    opacity: 1;
-  }
-}
-
-
-
-/*====================>>>    home page end    <<<======================= */
